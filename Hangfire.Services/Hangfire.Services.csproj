@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hangfire.Data\Hangfire.Data.csproj" />
+    <ProjectReference Include="..\Hangfire.Model\Hangfire.Model.csproj" />
+    <ProjectReference Include="..\Hangfire.Repository\Hangfire.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
