@@ -68,3 +68,5 @@ appsettings.Development.json
 
 # Ignore Webpack/Bundler output
 wwwroot/dist/
+/Hangfire.Api/appsettings.json
+/Hangfire.Api/appsettings.json
