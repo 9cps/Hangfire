@@ -1,0 +1,33 @@
+@model Hangfire.Models.Request.LoginViewModel
+
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/sweetalert2/dist/sweetalert2.min.css" />
+
+<div class="wrapper">
+    <div class="container">
+        <img class="img-logo" src="~/assets/ttb_bank_logo.png" alt="ttb">
+        <h1>TDR Scheduler</h1>
+        <form class="form" id="loginForm">
+            <input type="text" name="username" id="username" placeholder="Username" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <button type="submit" id="login-button">Login</button>
+        </form>
+    </div>
+
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="~/lib/sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script src="~/js/login.js" defer></script>

@@ -1,0 +1,39 @@
+{
+    "Serilog": {
+      "MinimumLevel": {
+        "Default": "Information",
+        "Override": {
+          "Microsoft": "Warning"
+        }
+      },
+      "WriteTo": [
+        {
+          "Name": "Console",
+          "Args": {
+            "outputTemplate": "{Timestamp:yyyy-MM-ddTHH:mm:sszzz} {ApplicationName} {ThreadName} {LogLevelString} {SourceContext} {SessionId} {UUID} {Message}{NewLine}"
+          }
+        },
+        {
+          "Name": "File",
+          "Args": {
+            "path": "C:/TDRDATA/TDR_WH/TDR_LOGS/webapp/hangfire-log-.log",
+            "rollingInterval": "Day",
+            "retainedfilecountlimit": 90,
+            "outputTemplate": "{Timestamp:yyyy-MM-ddTHH:mm:sszzz} {ApplicationName} {ThreadName} {LogLevelString} {SourceContext} {SessionId} {UUID} {Message}{NewLine}"
+          }
+        }
+      ],
+      "LevelSwitch": {
+        "MinimumLevel": "Debug",
+        "Rules": [
+          { "Name": "Microsoft", "Level": "Warning" },
+          { "Name": "System", "Level": "Warning" }
+        ]
+      },
+      "Enrich": [ "FromLogContext", "WithMachineName" ],
+      "Properties": {
+        "ApplicationName": "TDR Scheduler"
+      }
+    }
+}
+  

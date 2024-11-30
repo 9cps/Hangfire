@@ -8,12 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="8.0.7" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Hangfire.Data\Hangfire.Database.csproj" />
     <ProjectReference Include="..\Hangfire.Model\Hangfire.Models.csproj" />
-    <ProjectReference Include="..\Hangfire.Repository\Hangfire.Repositories.csproj" />
     <ProjectReference Include="..\Hangfire.Shared\Hangfire.Shared.csproj" />
   </ItemGroup>
 
